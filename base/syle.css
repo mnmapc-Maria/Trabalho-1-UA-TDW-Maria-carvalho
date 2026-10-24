@@ -1,0 +1,261 @@
+body {
+     background-color: #f8f9fa;
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+
+
+#haedr{
+    width: 100%;
+    height: 100px;
+}
+.container{
+    padding: 20px 10%;
+}
+
+
+nav{
+    width: 100%;
+    height: 100px;
+
+    background-color: #f56c77;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+nav url li{
+
+   display: inline-block;
+   justify-content: space-between;
+    list-style: none;
+     margin: 10px 20px;
+}
+
+nav url li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+nav url li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #d79292;
+    left: 0;
+    bottom: -5px;
+    transition:  0.5s ;
+}
+
+nav url li:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('ambiente-de-trabalho/base/fundo-casamento.jpg');
+
+    background: rgb(231, 158, 158);
+    background-size: cover;
+  
+}
+.nav2{
+    width: 100%;
+    height: 600px;
+    background-color: #f4a7ad;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 100px 20px;
+    margin-top: 5000px;
+    right: 10px;
+}
+
+.nav3{
+
+    width: 100%;
+    height: 100px;
+
+    background-color: #f56c77;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.nav3 url li{
+
+   display: inline-block;
+   justify-content: space-between;
+    list-style: none;
+     margin: 10px 20px;
+}
+
+.header-text url li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.nav3 url li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #d79292;
+    left: 0;
+    bottom: -5px;
+    transition:  0.5s ;
+}
+
+.nav3 url li:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('ambiente-de-trabalho/base/fundo-casamento.jpg');
+
+    background: rgb(231, 158, 158);
+    background-size: cover;
+  
+}
+
+.nav2{
+    width: 100%;
+    height: 100px;
+
+    background-color: #f56c77;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.nav4{
+
+    width: 100%;
+    height: 100px;
+    background-image: url('file:///C:/Users/mnmap/Desktop/base/casamento.png');
+    background-color: #f56c77;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+.display-4{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    font-style: bold;
+    right: 10px;
+    text-align: center;
+    color: #ee617b;
+}
+.img{
+    size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backgound-size: cover; 
+}
+
+.nav5{
+    width: 1000%;
+    height: 1000px;
+    background-image: url('file:///C:/Users/mnmap/Desktop/base/lace.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+
+#fotografos .card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  color: #f56c77;
+}
+
+#fotografos .card-title {
+  text-transform: capitalize;
+  font-weight: bold;
+   color: #676364;
+}
+
+#fotografos .card-text {
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+#fotografos .btn {
+  margin-top: 10px;
+}
+
+.h12{
+    font-size: 10px
+ font-weight: light;
+    color: #f56c77;
+}
+
+.banner {
+  background-image: url("file:///C:/Users/mnmap/Desktop/base/lace.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100px;
+}
+
+.nav7{
+    width: 100%;
+    height: 100px;
+    background-color: #f56c77;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+
+
+.nav8{
+    width: 50%;
+    height: 50px;
+    background-color: #f56c77;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.carousel { position: center; overflow: hidden; max-width: 640px; }
+.carousel-track { display: flex; transition: transform .4s ease; }
+.carousel-slide { min-width: 100%; }
+.carousel-slide img { width: 50%; display: block; position: center; }
+
+
+.button2 { position: absolute;
+     top: 50%; transform: translateY(-50%);
+      background-color: rgb(220, 111, 111); 
+      color: #ff8d8d; 
+      border: 2px solid #f56c77; 
+      padding: 10px; cursor: pointer;
+     }
+.carousel2 { position: center; overflow: hidden; max-width: 640px; }
+.carousel2-track { display: flex; transition: transform .4s ease; }
+.carousel2-slide { min-width: 100%; }
+.carousel2-slide img { width: 100%; display: block; position: center; }
+
+.div6 { position: center; overflow: hidden; max-width: 100px;
+img { width: 50%; display: block; position: center; } }

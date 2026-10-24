@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fotógrafos </title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- O teu CSS -->
+  <link rel="stylesheet" href="syle.css">
+</head>
+
+<body>
+
+  <nav>
+    <url>
+      <li><a href="ex01.html">Sobre nós</a></li>
+      <li><a href="ex02.html">Locais</a></li>
+      <li><a href="ex03.html">Fotógrafos</a></li>
+     <!-- <li><a href="#">Cozinhas</a></li> -->
+      <li><a href="ex04.html">Contactos</a></li>
+    </url>
+  </nav>
+ <section class="banner">
+    
+    </section>
+  
+  <h1 class="display-4">fotografia</h1>
+
+  
+  <main class="container my-5">
+    <h2 class="mb-4">Fotógrafos disponíveis</h2>
+<nav2>
+
+    <div id="fotografos" class="row g-4">
+      <p>A carregar fotógrafos...</p>
+    </div>
+  </main>
+  <script>
+    async function main() {
+      const container = document.getElementById("fotografos");
+
+      try {
+        const resposta = await fetch(
+          "https://randomuser.me/api/?results=10"
+        );
+
+        if (!resposta.ok) {
+          throw new Error("Erro HTTP: " + resposta.status);
+        }
+
+        const dados = await resposta.json();
+        container.innerHTML = "";
+
+        dados.results.forEach(function(pessoa) {
+          container.innerHTML += `
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="${pessoa.picture.large}"
+                  class="card-img-top"
+                  alt="Fotografia de ${pessoa.name.first}"
+                >
+
+                <div class="card-body">
+                  <h5 class="card-title">
+                    ${pessoa.name.first} ${pessoa.name.last}
+                  </h5>
+                   <h12> numero de telefone: </h12> 
+                    <p>${pessoa.phone}</p>
+                    <h12> email: </h12> 
+                  <p>${pessoa.email}</p>
+
+                
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      } catch (erro) {
+        container.innerHTML =
+          '<p class="text-danger">Erro ao carregar os fotógrafos. Verifica a consola com F12.</p>';
+      }
+    }
+   
+    main();
+  </script>
+  <section class="banner"></section>
+</nav2>
+</body>
+</html>
